@@ -2,10 +2,13 @@ package main
 
 import "fmt"
 
+// task 1
+
 func main() {
-	var i int
-	numbers := []int{1, 5, 7, 10, 27}
+
+	numbers := []int{1, 5, 7, 10, 27, 35}
 	numbers = append(numbers, 40)
-	numbers = append(numbers[:i], numbers[i+1:]...)
-	fmt.Println("Длина:", len(numbers))
+	numbers = append(numbers[:1], numbers[10+1:]...)
+	fmt.Println("Длина", len(numbers))
+
 }
