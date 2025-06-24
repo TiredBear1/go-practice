@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func main() {
-
-	fmt.Println("Задача про массивы и срезы!")
+	var i int
+	numbers := []int{1, 5, 7, 10, 27}
+	numbers = append(numbers, 40)
+	numbers = append(numbers[:i], numbers[i+1:]...)
+	fmt.Println("Длина:", len(numbers))
 }
