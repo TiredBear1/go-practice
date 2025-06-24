@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-// task 1
+/*
+	task 1-2
 
 func main() {
 
@@ -12,4 +15,29 @@ func main() {
 	fmt.Println("В срезе", numbers)
 	fmt.Println("длина", len(numbers))
 
+}
+*/
+
+func main() {
+	var onlyOddSlice []int
+	var count int
+
+	fmt.Print("Введите количество чисел в срезе: ")
+	fmt.Scan(&count)
+
+	var value int
+	for num := 0; num < count; num++ {
+		fmt.Printf("Введите число №%d: ", num+1)
+		_, err := fmt.Scan(&value)
+		if err != nil {
+			fmt.Println("Ошибка ввода. Прерывание.")
+			break
+		}
+
+		if value%2 != 0 {
+			onlyOddSlice = append(onlyOddSlice, value)
+		}
+	}
+
+	fmt.Println("Срез (только нечётные):", onlyOddSlice)
 }
