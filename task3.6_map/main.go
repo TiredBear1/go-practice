@@ -26,7 +26,8 @@ func main() {
 
 }
 */
-
+/*
+	task 2
 func main() {
 	diary := make(map[string]string)
 	diary["Dog"] = "собака"
@@ -47,5 +48,25 @@ func main() {
 		fmt.Println("В списке имеются перевод:", val)
 	} else {
 		fmt.Println("перевода нет")
+	}
+}
+*/
+
+// task 3
+
+func main() {
+	dictionary := make(map[string]int)
+	var name string
+
+	for i := 0; i < 5; i++ {
+		fmt.Print("Введите имя: ")
+		fmt.Scan(&name)
+		dictionary[name]++
+	}
+
+	fmt.Println("Результаты:")
+
+	for user, count := range dictionary {
+		fmt.Println(user, "написал сообщений:", count, "раз")
 	}
 }
