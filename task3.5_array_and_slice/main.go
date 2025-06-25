@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-/*
-	task 1-2
+/*	task 1-2
+
 
 func main() {
 
@@ -17,6 +17,8 @@ func main() {
 
 }
 */
+
+//	task 1-2
 
 func main() {
 	var onlyOddSlice []int
